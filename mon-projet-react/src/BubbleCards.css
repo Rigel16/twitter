@@ -1,0 +1,73 @@
+.bubble-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  
+  .bubble-card {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: float 4s ease-in-out infinite;
+    cursor: pointer;
+  }
+  
+  .bubble-card .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .bubble-card .card-title {
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .bubble-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  @keyframes float {
+    0% { 
+      transform: translateY(0px); 
+    }
+    50% { 
+      transform: translateY(-10px); 
+    }
+    100% { 
+      transform: translateY(0px); 
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .bubble-card {
+      width: 120px;
+      height: 120px;
+      padding: 15px;
+    }
+  
+    .bubble-card .icon {
+      font-size: 1.5rem;
+    }
+  
+    .bubble-card .card-title {
+      font-size: 0.7rem;
+    }
+  }

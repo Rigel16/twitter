@@ -1,0 +1,184 @@
+.connexion-page {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    box-shadow: rgb(38, 57, 77) 10px 10px 10px -10px;
+    text-align: center;
+   margin-left: 900px;
+    padding-top: 40px;
+  }
+  .Mylogo{ transform-style: preserve-3d;
+    animation: rotate 6s infinite linear;}
+  
+  .Mylogo img {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .connexion-page h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px; 
+  }
+   
+   
+   
+  .Myform {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width:300px;
+     
+  }
+  
+  .Myform 
+  .Myinput {
+    width: 100%; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  .links {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .btnSuivant {
+    width: 100%; 
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 2px;
+    color: #000;
+    background-color: #fff;
+  }
+  .btnSuivant:hover {
+    background-color: rgb(11, 151, 231);
+  }
+  
+  .monDepasse {
+    border-radius: 20px;
+    border: 1px solid #fff;
+    padding: 7px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .monDepasse:hover {
+    
+    border: 2px solid  rgb(11, 151, 231);;
+  }
+  
+  .Myinscription:hover {
+    color: rgb(0, 195, 255);
+  }
+  
+  .Myinscription {
+    display: flex;
+    margin-left: 4px;
+    text-decoration: none;
+    color: rgb(11, 151, 231);
+     
+  }
+  .Mypasdecompinscrip{
+    display: flex;
+   }
+  
+    .pasdecomp{
+      align-items: center;
+    }
+  
+  .closePop{ margin-right: 460px;
+    margin-bottom: 40px;
+  width: 50px;
+  font-size: 20px;
+  background: none;
+  border: none; 
+  color: aliceblue;  }
+  @media screen and (max-width: 500px) {
+    .connexion-page {
+      width: 100%;
+      max-width: 500px;  
+      height: 100%;  
+      padding: 40px 15px;  
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+      margin-left: 0; 
+    }
+  
+    .Mylogo img {
+      width: 40px;
+    }
+  
+    .connexion-page h1 {
+      font-size: 24px;
+    }
+  
+    .Myform .Myinput {
+      font-size: 14px;
+    }
+  
+    .btnSuivant {
+      font-size: 14px;
+    }
+    .closePop{margin-left:20%;}
+  }
+  
+    
+  
+  @media screen and (min-width: 500px) and (max-width: 900px) {
+    .connexion-page {
+      width: 100%;
+      max-width: 500px;  
+      height: 100%;  
+      padding: 40px 15px;  
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+      margin-left: 0; 
+    }
+  
+    
+    .Mylogo img {
+      width: 40px;
+    }
+  
+    .connexion-page h1 {
+      font-size: 24px;
+    }
+  
+    .Myform .Myinput {
+      font-size: 14px;
+    }
+  
+    .btnSuivant {
+      font-size: 14px;
+    }
+    .closePop{margin-left:20%;}
+  }
+  
+    
