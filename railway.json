@@ -1,0 +1,15 @@
+{
+  "build": {
+    "preBuild": "cd projet-laravel && composer install && cd ../mon-projet-react && yarn install",
+    "cmd": "cd projet-laravel && php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=8080"
+  },
+  "env": {
+    "APP_ENV": "production",
+    "APP_KEY": "base64:random_key_here",
+    "DB_CONNECTION": "mysql",
+    "DB_HOST": "@database",
+    "DB_DATABASE": "railway",
+    "DB_USERNAME": "railway",
+    "DB_PASSWORD": "password_here"
+  }
+}
